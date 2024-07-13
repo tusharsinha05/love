@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="welcome()">
+    <div id="container" class="box">
+        <p>Do you love me ??</p>
+        <button id="yes" onclick="alert('Thank Yous so Much ❤️❤️Love You Too 💕💕💕');">Yes</button>
+        <button id="no">No</button>
+    </div>
+    <script>
+        const no = document.getElementById('no');
+        function move(){
+            const maxWidth = 300;
+            const maxHeight = 300;
+
+            const randomX = Math.floor(Math.random()* maxWidth);
+            const randomY = Math.floor(Math.random()* maxHeight);
+
+            no.style.left = randomX + 'px';
+            no.style.top = randomY + 'px';
+        }
+        no.addEventListener('mouseenter', function(){
+            move();
+        });
+        function welcome(){
+            let name = prompt('Heyy !! Your  Good Name ??');
+            alert('Hello '+ name);
+        }
+    </script>
+</body>
+</html>

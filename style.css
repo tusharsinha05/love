@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+.box{
+    height: 350px;
+    width: 600px;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    box-sizing: border-box;
+    border-radius: 26px;
+    box-shadow: 2px 2px 10px rgb(35, 35, 43);
+    overflow: hidden;
+}
+
+.box p{
+    font-size: 30px;
+    position: absolute;
+    top: 82px;
+    left: 88px;
+    /* border: 2px solid blue; */
+}
+
+#yes{
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    height: 42px;
+    width: 71px;
+    background-color: red;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: wheat;
+    cursor: pointer;
+}
+
+#no{position: absolute;
+    cursor: pointer;
+    color: wheat;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    top: 160px;
+    left: 200px;
+    height: 42px;
+    width: 71px;
+    border-radius: 20px;
+    background-color: red;
+}
